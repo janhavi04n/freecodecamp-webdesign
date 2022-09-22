@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style\survey.css">
+    <title>BookClub survey</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome to Our BookClub</h1>
+    <p id="description">Please fill out the form below to help us know you better</p>
+    <form id="survey-form">
+      <fieldset>
+		  <label id="name-label" for="name">Please Enter Your Name: 
+		  <input type="text" id="name" placeholder="Please enter your name" required>
+		  </label>
+		  <label id="email-label" for="email">Please Enter Your Email: 
+		  <input type="email" id="email" placeholder="Please enter your email" required>
+		  </label>
+		  <label id="number-label" for="number">Please Enter Your Age:  
+		  <input type="number" id="number" placeholder="Please enter your age" min="12" max="100">
+		  </label>
+	  </fieldset>
+	  <fieldset>
+		  <label class="headings">Preferred Reader: </label>
+			  <label for="kindel"><input type="radio" id="kindel" name="reader" value="kindel" class="inline">E-books/Kindel</label>
+			  <label for="audio"><input type="radio" id="audio" name="reader" value="audio" class="inline">Audiobooks</label>
+			  <label for="books"><input type="radio" id="books" name="reader" value="books" class="inline">Books (Paperback/Hardcover)</label>
+		  <label class="headings">Your Favourite Genre:</label>
+			  <label for="scifi"><input type="checkbox" id="scifi" name="genre" value="scifi" class="inline">Sci-Fi</label>
+			  <label for="horor"><input type="checkbox" id="horor" name="genre" value="horor" class="inline">Horror</label>
+			  <label for="hist"><input type="checkbox" id="hist" name="genre" value="hist" class="inline">History</label> 
+			  <label for="bio"><input type="checkbox" id="bio" name="genre" value="bio" class="inline">Biography</label>
+			  <label for="myst"><input type="checkbox" id="myst" name="genre" value="myst" class="inline">Mystery</label>
+			  <label for="selfh"><input type="checkbox" id="selfh" name="genre" value="selfh" class="inline">Selfhelp</label> 
+			  <label for="oth"><input type="checkbox" id="oth" name="genre" value="oth" class="inline">Others (not mentioned in above)</label>
+	  </fieldset>
+	  <fieldset>
+		<label for="dropdown">How did you hear about us?
+			<select id="dropdown" name="dropdown">
+			  <option value="">(Please select one)</option>
+			  <option value="1">Recommend by a friend</option>
+			  <option value="2">Social media posts</option>
+			  <option value="3">Flyer at library</option>
+			  <option value="4">Other</option>
+			</select>
+	  </label>
+		<label for="suggests" id="suggestion-label">Suggestions:
+			<textarea id="suggests" name="suggests" rows="3" cols="30" placeholder="Theme for the next readathon..."></textarea>
+		</label>
+	  </fieldset>
+	  <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
